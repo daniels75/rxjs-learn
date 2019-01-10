@@ -1,3 +1,3 @@
-import * as Rx from "rxjs/Observable";
+import { Subject, Observable } from 'rxjs';
 
-console.log(Rx);
+console.log(Observable);

@@ -39,7 +39,7 @@ create a file webpack.config.js
 Copy the content from: https://github.com/designcourse/rxjs-starter-coursetro
 
 
-### Step 12 create tsconfig.js file
+### Step 12 create tsconfig.json file
 Copy the content from https://github.com/designcourse/rxjs-starter-coursetro
 
 ### Step 13 create a index.html
@@ -49,11 +49,14 @@ Copy the content from https://github.com/designcourse/rxjs-starter-coursetro
 
 ### Step 15 copy following content to code.ts file
 ```
-import * as Rx from "rxjs/Observable";
+import { Subject, Observable } from 'rxjs';
 
-console.log(Rx);
+console.log(Observable);
 ```
-
+### Step 15 From console run a following command and check console
+```
+yarn run start
+```
 
 
 
