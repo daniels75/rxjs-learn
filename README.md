@@ -1,5 +1,5 @@
 ## Installation
-### StepStep 1 
+### Step 1 
 install Visual Studio Code
 
 ### Step 2 Install yarn
@@ -34,19 +34,25 @@ c:\daniels\RxJS\rxjs-learn>code .
   },
 ```
 ### Step 11 setup WebPack
+
 create a file webpack.config.js
 Copy the content from: https://github.com/designcourse/rxjs-starter-coursetro
 
-### Step 12 setup WebPack
 
-### Step 13 create tsconfig.js file
+### Step 12 create tsconfig.js file
 Copy the content from https://github.com/designcourse/rxjs-starter-coursetro
 
-### Step 14 create a index.html
+### Step 13 create a index.html
 Copy the content from https://github.com/designcourse/rxjs-starter-coursetro
 
+### Step 14 create code.ts file in src folder
 
-### Step 15
+### Step 15 copy following content to code.ts file
+```
+import * as Rx from "rxjs/Observable";
+
+console.log(Rx);
+```
 
 
 
