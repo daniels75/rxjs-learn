@@ -1,5 +1,5 @@
 ## Installation
-**Step 1 
+### StepStep 1 
 install Visual Studio Code
 
 ### Step 2 Install yarn
@@ -27,10 +27,32 @@ c:\daniels\RxJS\rxjs-learn>yarn add webpack-cli --dev
 ### Step 9 Open Visulal Studio Code
 c:\daniels\RxJS\rxjs-learn>code .
 
-### Step 10
-add following to the package.json file
+### Step 10 add following to the package.json file
+```
   "scripts": {
     "start": "webpack-dev-server --mode development"
   },
+```
+### Step 11 setup WebPack
+create a file webpack.config.js
+Copy the content from: https://github.com/designcourse/rxjs-starter-coursetro
+
+### Step 12 setup WebPack
+
+### Step 13 create tsconfig.js file
+Copy the content from https://github.com/designcourse/rxjs-starter-coursetro
+
+### Step 14 create a index.html
+Copy the content from https://github.com/designcourse/rxjs-starter-coursetro
+
+
+### Step 15
+
+
+
+
+
+
+
 
 
