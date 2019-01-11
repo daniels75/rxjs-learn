@@ -102,6 +102,9 @@ var observer62 = obs6.subscribe(
     (value:any) => addItem(value),
 );
 
+// here we are attached a sub-observer
+observer61.add(observer62);
+
 setTimeout(() =>  {
     observer61.unsubscribe();
-}, 4001)
+}, 6001)
