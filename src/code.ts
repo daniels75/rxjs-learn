@@ -39,10 +39,14 @@ function addItem(val:any) {
 
 // Step 1.4 new Observable
 var obs4: Observable<any>  = Observable.create((observer: any)  => {
-    observer.next('obs4> Hej hej hej...')
-    observer.next('obs4> What is next? ...')
-    observer.complete();
-    observer.next('obs4> this will be not showed ...')
+    try {
+        observer.next('obs4> Hej hej hej...')
+        observer.next('obs4> What is next? ...')
+        observer.complete();
+        observer.next('obs4> this will be not showed ...')
+    } catch (err) {
+        observer.error(err)
+    }
 });
 
 
@@ -53,3 +57,51 @@ obs4.subscribe(
 );
 
 
+// Step 1.5  Observable with interval
+var obs5: Observable<any>  = Observable.create((observer: any)  => {
+    try {
+        observer.next('obs5> Hej hej hej...')
+        observer.next('obs5> How are you?')
+        setInterval(() => {
+            observer.next('obs5> Im good')
+        }, 2000)
+    } catch (err) {
+        observer.error(err)
+    }
+});
+
+
+var observer5 = obs5.subscribe(
+    (value:any) => addItem(value),
+    (error:any) => addItem(error),
+    () => addItem('obs5> completed')
+);
+
+
+setTimeout(() =>  {
+    observer5.unsubscribe();
+}, 6001)
+
+// Step 1.6  Observable with interval and 2 subscription
+var obs6: Observable<any>  = Observable.create((observer: any)  => {
+    try {
+        observer.next('obs6> How are you?')
+        setInterval(() => {
+            observer.next('obs6> Im good')
+        }, 2000)
+    } catch (err) {
+        observer.error(err)
+    }
+});
+
+
+var observer61 = obs6.subscribe(
+    (value:any) => addItem(value),
+);
+var observer62 = obs6.subscribe(
+    (value:any) => addItem(value),
+);
+
+setTimeout(() =>  {
+    observer61.unsubscribe();
+}, 4001)
