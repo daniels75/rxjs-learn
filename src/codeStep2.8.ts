@@ -20,9 +20,10 @@ behaviorSubject.subscribe(
 behaviorSubject.next('The first thing has been set');
 
 
-// important differenct between a Subject and BehaviorSubject
-// here Observer2 will receive also 'The first thing has been set'
-// this is the main difference
+//  here is important difference between a Subject and BehaviorSubject
+// here Observer 2 will receive also 'The first thing has been set'
+// so this is the main difference, in the exmaple
+//  with Subject this message was not showed for Observer 2
 const observer2$ = behaviorSubject.subscribe(
     data => addItem(`Observer 2: ${data}`)
 )
