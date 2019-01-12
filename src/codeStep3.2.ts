@@ -1,7 +1,7 @@
 import { interval, Subject, Observable, of } from 'rxjs';
 import {  merge } from 'rxjs';
 
-// Observer - merge exmaple
+// Operator example - merge
 
 const observable1 = Observable.create((observer:any) => {
     observer.next('Hej guys!');

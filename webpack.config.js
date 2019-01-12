@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/codeStep3.2.ts',
+  entry: './src/codeStep3.3.ts',
   devtool: 'inline-source-map',
   module: {
     rules: [

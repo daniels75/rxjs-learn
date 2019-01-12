@@ -1,16 +1,15 @@
 import { interval, Subject, Observable, of } from 'rxjs';
 import {  merge } from 'rxjs';
+import { map } from 'rxjs/operators';
 
-// Operator example - merge
+// Operator example - map
 
-const observable1 = of(1,2,3);
-const observable2= of(4,5);
+Observable.create((observer:any) => {
+    observer.next('Hej guys!');
+})
 
-const mergeObs = merge(observable1, observable2);
-
-mergeObs.subscribe(
-    value => addItem(`Value: ${value}`)
-)
+.pipe(map ((val:any) => val.toUpperCase()))
+.subscribe((val:any) => addItem(val))
 
 
 
