@@ -2,6 +2,8 @@ import { interval } from 'rxjs';
 import { Subject, Observable } from 'rxjs';
 import { publish, tap } from 'rxjs/operators';
 
+// Subject example
+
 // Subject in contract to and Observable is simply an observer that's 
 // also able to emit values, so it's both an observable and an
 // observer simultaneously 
