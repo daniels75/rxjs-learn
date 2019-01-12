@@ -51,12 +51,22 @@ Copy the content from https://github.com/designcourse/rxjs-starter-coursetro
 ```
 import { Subject, Observable } from 'rxjs';
 
-console.log(Observable);
+console.log(Observable);np
 ```
 ### Step 15 From console run a following command and check console
 ```
 yarn run start
 ```
+
+
+## Examples
+
+### Cold observable
+https://stackblitz.com/edit/typescript-3f8uiq?file=index.ts
+
+### Hot observable
+https://stackblitz.com/edit/typescript-5ycshu?file=index.ts
+
 
 
 
