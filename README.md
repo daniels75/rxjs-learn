@@ -67,6 +67,9 @@ https://stackblitz.com/edit/typescript-3f8uiq?file=index.ts
 ### Hot observable
 https://stackblitz.com/edit/typescript-5ycshu?file=index.ts
 
+### Switch example
+https://stackblitz.com/edit/rxjs-j56cf8?file=index.ts
+
 
 
 
