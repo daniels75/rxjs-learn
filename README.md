@@ -70,6 +70,9 @@ https://stackblitz.com/edit/typescript-5ycshu?file=index.ts
 ### Switch example
 https://stackblitz.com/edit/rxjs-j56cf8?file=index.ts
 
+### MergeMap
+https://stackblitz.com/edit/rxjs-bcdsey?file=index.ts
+
 
 
 
